@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNgPOM Selenium Easy Test Suite" verbose="1">
+	<test name="Selenium Easy Test Site Test Cases">
+		<classes>
+			<class name="com.qa.testcases.HomePageTests"/>
+			<class name="com.qa.testcases.InputElementsPageTests"/>
+			<class name="com.qa.testcases.DatePickersPageTests"/>
+			<class name="com.qa.testcases.DummyTestClass1"/>
+			<class name="com.qa.testcases.DummyTestClass2"/>
+		</classes>
+	</test>
+</suite>

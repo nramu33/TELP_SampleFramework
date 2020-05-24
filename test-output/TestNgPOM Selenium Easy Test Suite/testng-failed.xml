@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNgPOM Selenium Easy Test Suite]">
+  <test thread-count="5" name="Selenium Easy Test Site Test Cases(failed)">
+    <classes>
+      <class name="com.qa.testcases.InputElementsPageTests">
+        <methods>
+          <include name="inputElementsPageTitleTest"/>
+          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testcases.InputElementsPageTests -->
+      <class name="com.qa.testcases.HomePageTests">
+        <methods>
+          <include name="homePageTitleTest"/>
+          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testcases.HomePageTests -->
+      <class name="com.qa.testcases.DummyTestClass1">
+        <methods>
+          <include name="dummyOne_FailTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testcases.DummyTestClass1 -->
+      <class name="com.qa.testcases.DummyTestClass2">
+        <methods>
+          <include name="setUp"/>
+          <include name="dummyTwo_FailTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testcases.DummyTestClass2 -->
+    </classes>
+  </test> <!-- Selenium Easy Test Site Test Cases(failed) -->
+</suite> <!-- Failed suite [TestNgPOM Selenium Easy Test Suite] -->

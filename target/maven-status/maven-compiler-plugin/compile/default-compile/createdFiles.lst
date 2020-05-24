@@ -1,0 +1,7 @@
+com\qa\demopages\DatePickersPage.class
+com\qa\util\TestUtil.class
+com\qa\demopages\TablePage.class
+com\qa\demopages\HomePage.class
+com\qa\listener\TestListener.class
+com\qa\base\TestBase.class
+com\qa\demopages\InputElementsPage.class

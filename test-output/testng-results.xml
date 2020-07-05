@@ -1,41 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" ignored="8" total="18" passed="6">
+<testng-results skipped="0" failed="5" ignored="8" total="18" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNgPOM Selenium Easy Test Suite" duration-ms="4534" started-at="2020-05-24T15:19:45Z" finished-at="2020-05-24T15:19:50Z">
+  <suite name="TestNgPOM Selenium Easy Test Suite" duration-ms="8890" started-at="2020-05-25T04:44:22Z" finished-at="2020-05-25T04:44:31Z">
     <groups>
     </groups>
-    <test name="Selenium Easy Test Site Test Cases" duration-ms="4534" started-at="2020-05-24T15:19:45Z" finished-at="2020-05-24T15:19:50Z">
+    <test name="Selenium Easy Test Site Test Cases" duration-ms="8890" started-at="2020-05-25T04:44:22Z" finished-at="2020-05-25T04:44:31Z">
       <class name="com.qa.testcases.DatePickersPageTests">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.testcases.DatePickersPageTests@2bbf180e]" name="setUpClass" is-config="true" duration-ms="2" started-at="2020-05-24T15:19:47Z" finished-at="2020-05-24T15:19:47Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.testcases.DatePickersPageTests@2bbf180e]" name="setUpClass" is-config="true" duration-ms="2" started-at="2020-05-25T04:44:26Z" finished-at="2020-05-25T04:44:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="datePickersPageTitleTest()[pri:1, instance:com.qa.testcases.DatePickersPageTests@2bbf180e]" name="datePickersPageTitleTest" duration-ms="1381" started-at="2020-05-24T15:19:47Z" finished-at="2020-05-24T15:19:48Z">
+        <test-method status="FAIL" signature="datePickersPageTitleTest()[pri:1, instance:com.qa.testcases.DatePickersPageTests@2bbf180e]" name="datePickersPageTitleTest" duration-ms="1178" started-at="2020-05-25T04:44:26Z" finished-at="2020-05-25T04:44:27Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="#" class="dropdown-toggle" data-toggle="dropdown">...</a> is not clickable at point (309, 191). Other element would receive the click: <div id="at-cv-lightbox-inner">...</div>
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'RAMUNIMMANA-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}), userDataDir=C:\Users\RAMUNI~1\AppData\Local\Temp\scoped_dir10356_1806951668}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58264}, acceptInsecureCerts=false, browserVersion=81.0.4044.138, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4728c37b86a0638b3651e86709587443]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="dropdown-toggle" data-toggle="dropdown">...</a> is not clickable at point (309, 191). Other element would receive the click: <div id="at-cv-lightbox-inner">...</div>
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'RAMUNIMMANA-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}), userDataDir=C:\Users\RAMUNI~1\AppData\Local\Temp\scoped_dir10356_1806951668}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58264}, acceptInsecureCerts=false, browserVersion=81.0.4044.138, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4728c37b86a0638b3651e86709587443
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at com.qa.demopages.HomePage.navigateToDatePickersPg(HomePage.java:44)
+at com.qa.testcases.DatePickersPageTests.datePickersPageTitleTest(DatePickersPageTests.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datePickersPageTitleTest -->
-        <test-method status="PASS" signature="seleniumEasyLogoTest()[pri:2, instance:com.qa.testcases.DatePickersPageTests@2bbf180e]" name="seleniumEasyLogoTest" duration-ms="95" started-at="2020-05-24T15:19:50Z" finished-at="2020-05-24T15:19:50Z">
+        <test-method status="PASS" signature="seleniumEasyLogoTest()[pri:2, instance:com.qa.testcases.DatePickersPageTests@2bbf180e]" name="seleniumEasyLogoTest" duration-ms="75" started-at="2020-05-25T04:44:31Z" finished-at="2020-05-25T04:44:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleniumEasyLogoTest -->
       </class> <!-- com.qa.testcases.DatePickersPageTests -->
       <class name="com.qa.testcases.InputElementsPageTests">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.testcases.InputElementsPageTests@d4342c2]" name="setUpClass" is-config="true" duration-ms="3" started-at="2020-05-24T15:19:46Z" finished-at="2020-05-24T15:19:46Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.testcases.InputElementsPageTests@d4342c2]" name="setUpClass" is-config="true" duration-ms="5" started-at="2020-05-25T04:44:23Z" finished-at="2020-05-25T04:44:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="navigateToinputElementsPageTest()[pri:1, instance:com.qa.testcases.InputElementsPageTests@d4342c2]" name="navigateToinputElementsPageTest" duration-ms="1008" started-at="2020-05-24T15:19:46Z" finished-at="2020-05-24T15:19:47Z">
+        <test-method status="FAIL" signature="navigateToinputElementsPageTest()[pri:1, instance:com.qa.testcases.InputElementsPageTests@d4342c2]" name="navigateToinputElementsPageTest" duration-ms="1705" started-at="2020-05-25T04:44:23Z" finished-at="2020-05-25T04:44:25Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="./basic-first-form-demo.html">...</a> is not clickable at point (219, 235). Other element would receive the click: <div id="at-cv-lightbox-inner">...</div>
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'RAMUNIMMANA-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}), userDataDir=C:\Users\RAMUNI~1\AppData\Local\Temp\scoped_dir10356_1806951668}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58264}, acceptInsecureCerts=false, browserVersion=81.0.4044.138, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4728c37b86a0638b3651e86709587443]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="./basic-first-form-demo.html">...</a> is not clickable at point (219, 235). Other element would receive the click: <div id="at-cv-lightbox-inner">...</div>
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'RAMUNIMMANA-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}), userDataDir=C:\Users\RAMUNI~1\AppData\Local\Temp\scoped_dir10356_1806951668}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58264}, acceptInsecureCerts=false, browserVersion=81.0.4044.138, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4728c37b86a0638b3651e86709587443
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at com.qa.demopages.HomePage.navigateToSipleFormDemoPg(HomePage.java:40)
+at com.qa.testcases.InputElementsPageTests.navigateToinputElementsPageTest(InputElementsPageTests.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToinputElementsPageTest -->
-        <test-method status="FAIL" signature="inputElementsPageTitleTest()[pri:2, instance:com.qa.testcases.InputElementsPageTests@d4342c2]" name="inputElementsPageTitleTest" duration-ms="13" started-at="2020-05-24T15:19:49Z" finished-at="2020-05-24T15:19:49Z">
+        <test-method status="FAIL" signature="inputElementsPageTitleTest()[pri:2, instance:com.qa.testcases.InputElementsPageTests@d4342c2]" name="inputElementsPageTitleTest" duration-ms="20" started-at="2020-05-25T04:44:30Z" finished-at="2020-05-25T04:44:30Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Selenium Easy - Best Demo website for Bootstrap Date picker] but found [Selenium Easy Demo - Simple Form to Automate using Selenium]]]>
+              <![CDATA[expected [Selenium Easy - Best Demo website to practice Selenium Webdriver Online] but found [Selenium Easy Demo - Simple Form to Automate using Selenium]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Selenium Easy - Best Demo website for Bootstrap Date picker] but found [Selenium Easy Demo - Simple Form to Automate using Selenium]
+              <![CDATA[java.lang.AssertionError: expected [Selenium Easy - Best Demo website to practice Selenium Webdriver Online] but found [Selenium Easy Demo - Simple Form to Automate using Selenium]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -76,69 +208,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- inputElementsPageTitleTest -->
       </class> <!-- com.qa.testcases.InputElementsPageTests -->
       <class name="com.qa.testcases.HomePageTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="setUp" is-config="true" duration-ms="6338" started-at="2020-05-24T15:19:39Z" finished-at="2020-05-24T15:19:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="setUp" is-config="true" duration-ms="9186" started-at="2020-05-25T04:44:13Z" finished-at="2020-05-25T04:44:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="setUpClass" is-config="true" duration-ms="27" started-at="2020-05-24T15:19:46Z" finished-at="2020-05-24T15:19:46Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="setUpClass" is-config="true" duration-ms="27" started-at="2020-05-25T04:44:23Z" finished-at="2020-05-25T04:44:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="seleniumEasyLogoTest()[pri:1, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="seleniumEasyLogoTest" duration-ms="116" started-at="2020-05-24T15:19:46Z" finished-at="2020-05-24T15:19:46Z">
+        <test-method status="PASS" signature="seleniumEasyLogoTest()[pri:1, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="seleniumEasyLogoTest" duration-ms="230" started-at="2020-05-25T04:44:23Z" finished-at="2020-05-25T04:44:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleniumEasyLogoTest -->
-        <test-method status="FAIL" signature="homePageTitleTest()[pri:2, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="homePageTitleTest" duration-ms="18" started-at="2020-05-24T15:19:49Z" finished-at="2020-05-24T15:19:49Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Home Page title is not matched expected [Selenium Easy - Best Demo website for Bootstrap Date picker] but found [Selenium Easy - Best Demo website to practice Selenium Webdriver Online]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Home Page title is not matched expected [Selenium Easy - Best Demo website for Bootstrap Date picker] but found [Selenium Easy - Best Demo website to practice Selenium Webdriver Online]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at com.qa.testcases.HomePageTests.homePageTitleTest(HomePageTests.java:23)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="homePageTitleTest()[pri:2, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="homePageTitleTest" duration-ms="33" started-at="2020-05-25T04:44:30Z" finished-at="2020-05-25T04:44:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="tearDown" is-config="true" duration-ms="916" started-at="2020-05-24T15:19:51Z" finished-at="2020-05-24T15:19:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.HomePageTests@4e91d63f]" name="tearDown" is-config="true" duration-ms="867" started-at="2020-05-25T04:44:32Z" finished-at="2020-05-25T04:44:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcases.HomePageTests -->
       <class name="com.qa.testcases.DummyTestClass1">
-        <test-method status="FAIL" signature="dummyOne_FailTest()[pri:1, instance:com.qa.testcases.DummyTestClass1@163e4e87]" name="dummyOne_FailTest" duration-ms="2" started-at="2020-05-24T15:19:48Z" finished-at="2020-05-24T15:19:48Z">
+        <test-method status="FAIL" signature="dummyOne_FailTest()[pri:1, instance:com.qa.testcases.DummyTestClass1@163e4e87]" name="dummyOne_FailTest" duration-ms="3" started-at="2020-05-25T04:44:28Z" finished-at="2020-05-25T04:44:28Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Failed]]>
@@ -178,13 +270,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummyOne_FailTest -->
-        <test-method status="PASS" signature="dummyOne_PassTest()[pri:2, instance:com.qa.testcases.DummyTestClass1@163e4e87]" name="dummyOne_PassTest" duration-ms="19" started-at="2020-05-24T15:19:50Z" finished-at="2020-05-24T15:19:50Z">
+        <test-method status="PASS" signature="dummyOne_PassTest()[pri:2, instance:com.qa.testcases.DummyTestClass1@163e4e87]" name="dummyOne_PassTest" duration-ms="2" started-at="2020-05-25T04:44:31Z" finished-at="2020-05-25T04:44:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummyOne_PassTest -->
       </class> <!-- com.qa.testcases.DummyTestClass1 -->
       <class name="com.qa.testcases.DummyTestClass2">
-        <test-method status="FAIL" signature="dummyTwo_FailTest()[pri:1, instance:com.qa.testcases.DummyTestClass2@56de5251]" name="dummyTwo_FailTest" duration-ms="3" started-at="2020-05-24T15:19:49Z" finished-at="2020-05-24T15:19:49Z">
+        <test-method status="FAIL" signature="dummyTwo_FailTest()[pri:1, instance:com.qa.testcases.DummyTestClass2@56de5251]" name="dummyTwo_FailTest" duration-ms="3" started-at="2020-05-25T04:44:29Z" finished-at="2020-05-25T04:44:29Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Failed]]>
@@ -224,7 +316,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummyTwo_FailTest -->
-        <test-method status="PASS" signature="dummyTwo_PassTest()[pri:2, instance:com.qa.testcases.DummyTestClass2@56de5251]" name="dummyTwo_PassTest" duration-ms="1" started-at="2020-05-24T15:19:50Z" finished-at="2020-05-24T15:19:50Z">
+        <test-method status="PASS" signature="dummyTwo_PassTest()[pri:2, instance:com.qa.testcases.DummyTestClass2@56de5251]" name="dummyTwo_PassTest" duration-ms="3" started-at="2020-05-25T04:44:31Z" finished-at="2020-05-25T04:44:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummyTwo_PassTest -->

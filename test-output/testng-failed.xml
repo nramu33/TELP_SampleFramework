@@ -9,16 +9,17 @@
           <include name="setUpClass"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="navigateToinputElementsPageTest"/>
         </methods>
       </class> <!-- com.qa.testcases.InputElementsPageTests -->
-      <class name="com.qa.testcases.HomePageTests">
+      <class name="com.qa.testcases.DatePickersPageTests">
         <methods>
-          <include name="homePageTitleTest"/>
           <include name="setUpClass"/>
+          <include name="datePickersPageTitleTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.testcases.HomePageTests -->
+      </class> <!-- com.qa.testcases.DatePickersPageTests -->
       <class name="com.qa.testcases.DummyTestClass1">
         <methods>
           <include name="dummyOne_FailTest"/>

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNgPOM Selenium Easy Test Suite" duration-ms="1559" started-at="2021-03-25T05:58:11Z" finished-at="2021-03-25T05:58:13Z">
+  <suite name="TestNgPOM Selenium Easy Test Suite" duration-ms="1320" started-at="2021-03-25T07:27:37Z" finished-at="2021-03-25T07:27:38Z">
     <groups>
     </groups>
-    <test name="Selenium Easy Test Site Test Cases" duration-ms="1559" started-at="2021-03-25T05:58:11Z" finished-at="2021-03-25T05:58:13Z">
+    <test name="Selenium Easy Test Site Test Cases" duration-ms="1320" started-at="2021-03-25T07:27:37Z" finished-at="2021-03-25T07:27:38Z">
       <class name="com.qa.testcases.DummyTestClass1">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="setUp" is-config="true" duration-ms="10039" started-at="2021-03-25T05:58:01Z" finished-at="2021-03-25T05:58:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="setUp" is-config="true" duration-ms="9656" started-at="2021-03-25T07:27:27Z" finished-at="2021-03-25T07:27:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="dummyOne_FailTest()[pri:1, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="dummyOne_FailTest" duration-ms="49" started-at="2021-03-25T05:58:11Z" finished-at="2021-03-25T05:58:11Z">
+        <test-method status="FAIL" signature="dummyOne_FailTest()[pri:1, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="dummyOne_FailTest" duration-ms="11" started-at="2021-03-25T07:27:37Z" finished-at="2021-03-25T07:27:37Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [expected] but found [actual]]]>
@@ -52,15 +52,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummyOne_FailTest -->
-        <test-method status="PASS" signature="assertAll()[pri:0, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="assertAll" is-config="true" duration-ms="0" started-at="2021-03-25T05:58:13Z" finished-at="2021-03-25T05:58:13Z">
+        <test-method status="PASS" signature="assertAll()[pri:0, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="assertAll" is-config="true" duration-ms="0" started-at="2021-03-25T07:27:38Z" finished-at="2021-03-25T07:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAll -->
-        <test-method status="PASS" signature="dummyOne_PassTest()[pri:2, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="dummyOne_PassTest" duration-ms="4" started-at="2021-03-25T05:58:13Z" finished-at="2021-03-25T05:58:13Z">
+        <test-method status="PASS" signature="dummyOne_PassTest()[pri:2, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="dummyOne_PassTest" duration-ms="3" started-at="2021-03-25T07:27:38Z" finished-at="2021-03-25T07:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummyOne_PassTest -->
-        <test-method status="FAIL" signature="assertAll()[pri:0, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="assertAll" is-config="true" duration-ms="0" started-at="2021-03-25T05:58:13Z" finished-at="2021-03-25T05:58:13Z">
+        <test-method status="FAIL" signature="assertAll()[pri:0, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="assertAll" is-config="true" duration-ms="0" started-at="2021-03-25T07:27:38Z" finished-at="2021-03-25T07:27:38Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -106,7 +106,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAll -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-25T05:58:13Z" finished-at="2021-03-25T05:58:13Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.testcases.DummyTestClass1@4cf777e8]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-25T07:27:39Z" finished-at="2021-03-25T07:27:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,5 +1,5 @@
-com\qa\testcases\DummyTestClass1.class
-com\qa\testcases\InputElementsPageTests.class
-com\qa\testcases\DatePickersPageTests.class
-com\qa\testcases\HomePageTests.class
-com\qa\testcases\DummyTestClass2.class
+com/qa/testcases/DatePickersPageTests.class
+com/qa/testcases/HomePageTests.class
+com/qa/testcases/DummyTestClass1.class
+com/qa/testcases/InputElementsPageTests.class
+com/qa/testcases/DummyTestClass2.class

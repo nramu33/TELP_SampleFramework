@@ -9,20 +9,22 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.service.ExtentService;
 import com.aventstack.extentreports.service.ExtentTestManager;
+import com.qa.util.Log;
 import com.qa.util.TestUtil;
 
 public class TestListener implements ITestListener {
 	//This method will executed when Test Execution is started
 	/*Strategy used to generate statistics for the current run 
 	Available strategies are: 
-	•BDD: Strategy for BDD-style (Gherkin) tests
-	•CLASS: Used for 2 levels: Class, Test
-	•SUITE: Used for 3 levels: Suite, Class, Test
-	•TEST: Used for 1 level only: Test
+	ï¿½BDD: Strategy for BDD-style (Gherkin) tests
+	ï¿½CLASS: Used for 2 levels: Class, Test
+	ï¿½SUITE: Used for 3 levels: Suite, Class, Test
+	ï¿½TEST: Used for 1 level only: Test
 	 */
 	//You can Define the AnalysisStartegy as per your requirement
 	public synchronized void onStart(ITestContext context) {
 		ExtentService.getInstance().setAnalysisStrategy(AnalysisStrategy.CLASS);
+		
 	}
 	//On start of each test this method will crete a method in extent report
 	public synchronized void onTestStart(ITestResult result) {

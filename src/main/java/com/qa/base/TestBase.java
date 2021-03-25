@@ -3,34 +3,48 @@ package com.qa.base;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 
 import com.qa.listener.TestListener;
+import com.qa.util.Log;
 import com.qa.util.TestUtil;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 @Listeners({TestListener.class})
 public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
-	Logger log = Logger.getLogger(TestBase.class);
+	public static String runStartTime;
 	public TestBase() {
 		readConfigPropertiesFile();
 	}
 
 	@BeforeSuite
 	public void setUp() {
+		setTimeStamp();
 		readConfigPropertiesFile();
 		initialization();
 	}
+	private void setTimeStamp() {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyMMdd-HHmmss");
+		Date date = new Date();
+		runStartTime = sdf.format(date);
+	}
+
 	private void readConfigPropertiesFile() {
 		try {
 			prop= new Properties();
@@ -48,26 +62,39 @@ public class TestBase {
 	public void initialization() {
 		String browser = prop.getProperty("browser");
 		if(browser.toLowerCase().contains("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "E:\\ChromeDriver\\chromedriver.exe");
+//			System.setProperty("webdriver.chrome.driver", "E:\\ChromeDriver\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
 		if(browser.toLowerCase().contains("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "E:\\GeckoDriver\\geckodriver.exe");
+//			System.setProperty("webdriver.gecko.driver", "E:\\GeckoDriver\\geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
+			//WebDriver Manager automatically manages the chromedriver for you
 			driver = new FirefoxDriver();
 		}
-		log.info("Launching Browser");
+		//We need to import Log class 
+		//Eg:import com.qa.util.Log;
+		Log.info("Launching Browser");
 		driver.manage().window().maximize();
-		log.info("Maximizing Browser");
+		Log.info("Maximizing Browser");
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		log.info("Page Load Timeout set to: "+TestUtil.PAGE_LOAD_TIMEOUT);
+		Log.info("Page Load Timeout set to: "+TestUtil.PAGE_LOAD_TIMEOUT);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICT_WAIT, TimeUnit.SECONDS);
-		log.info("Implicit Timeout set to: "+TestUtil.IMPLICT_WAIT);
+		Log.info("Implicit Timeout set to: "+TestUtil.IMPLICT_WAIT);
 		driver.get(prop.getProperty("url"));
-		log.info("Opening url: "+prop.getProperty("url"));
+		Log.info("Opening url: "+prop.getProperty("url"));
 	}
 	@AfterSuite
-	public void tearDown() {
+	public static void tearDown() {
 		driver.quit();
+		renameLogFile();
+	}
+
+	private static void renameLogFile() {
+		File srcFile = new File("application.log");
+		// File (or directory) with new name
+		File destFile2 = new File("log_"+runStartTime+".log");
+		srcFile.renameTo(destFile2);
 	}
 }

@@ -3,37 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TestNgPOM Selenium Easy Test Suite]">
   <test thread-count="5" name="Selenium Easy Test Site Test Cases(failed)">
     <classes>
-      <class name="com.qa.testcases.InputElementsPageTests">
-        <methods>
-          <include name="inputElementsPageTitleTest"/>
-          <include name="setUpClass"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="navigateToinputElementsPageTest"/>
-        </methods>
-      </class> <!-- com.qa.testcases.InputElementsPageTests -->
-      <class name="com.qa.testcases.DatePickersPageTests">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="datePickersPageTitleTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.testcases.DatePickersPageTests -->
       <class name="com.qa.testcases.DummyTestClass1">
         <methods>
+          <include name="assertAll"/>
           <include name="dummyOne_FailTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.testcases.DummyTestClass1 -->
-      <class name="com.qa.testcases.DummyTestClass2">
-        <methods>
-          <include name="setUp"/>
-          <include name="dummyTwo_FailTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.testcases.DummyTestClass2 -->
     </classes>
   </test> <!-- Selenium Easy Test Site Test Cases(failed) -->
 </suite> <!-- Failed suite [TestNgPOM Selenium Easy Test Suite] -->

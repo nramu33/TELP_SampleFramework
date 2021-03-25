@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -40,9 +41,8 @@ public class TestBase {
 		initialization();
 	}
 	private void setTimeStamp() {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyMMdd-HHmmss");
-		Date date = new Date();
-		runStartTime = sdf.format(date);
+		LocalDateTime currentDateTime = LocalDateTime.now();
+		runStartTime = currentDateTime.toString();
 	}
 
 	private void readConfigPropertiesFile() {
